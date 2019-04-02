@@ -2,6 +2,7 @@
 public class Utilizador {
 	// Atributes
 	private String nome, estado;
+	private TipoUtilizador tipoUtilizador;
 	
 	// Constructor
 	public Utilizador(String nome, String estado) {
@@ -24,5 +25,13 @@ public class Utilizador {
 
 	public void setEstado(String estado) {
 		this.estado = estado;
+	}
+
+	public TipoUtilizador getTipoUtilizador() {
+		return tipoUtilizador;
+	}
+
+	public void setTipoUtilizador(TipoUtilizador tipoUtilizador) {
+		this.tipoUtilizador = tipoUtilizador;
 	}
 }

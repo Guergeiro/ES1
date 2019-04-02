@@ -13,6 +13,11 @@ public class Repositorio {
 	private ArrayList<Requisicao> lista_requisicao;
 	private ArrayList<TipoUtilizador> lista_tipoUtilizador;
 	private ArrayList<Utilizador> lista_utilizador;
+	
+	private ArrayList<EntradaNovoLivro> lista_entradaNovoLivro;
+	private ArrayList<Encomenda> lista_encomenda;
+	private ArrayList<RequisicaoCompra> lista_requisicaoCompra;
+	private ArrayList<PropostaAquisicao> lista_propostaAquisicao;
 
 	// Constructor
 	public Repositorio() {
@@ -26,6 +31,11 @@ public class Repositorio {
 		this.lista_requisicao = new ArrayList<>();
 		this.lista_tipoUtilizador = new ArrayList<>();
 		this.lista_utilizador = new ArrayList<>();
+		
+		this.lista_entradaNovoLivro = new ArrayList<>();
+		this.lista_encomenda = new ArrayList<>();
+		this.lista_requisicaoCompra = new ArrayList<>();
+		this.lista_propostaAquisicao = new ArrayList<>();
 	}
 
 	// Methods
@@ -45,7 +55,15 @@ public class Repositorio {
 //		lista_emprestimo.add(emprestimo);
 		map_emprestimo.put(emprestimo.getRequisicao(), emprestimo);
 	}
-
+	
+	public void adicionaEncomenda(Encomenda encomenda) {
+		lista_encomenda.add(encomenda);
+	}
+	
+	public void adicionaEntradaNovoLivro(EntradaNovoLivro entradaNovoLivro) {
+		lista_entradaNovoLivro.add(entradaNovoLivro);
+	}
+	
 	public void adicionaLivro(Livro livro) {
 		lista_livro.add(livro);
 	}
@@ -54,8 +72,16 @@ public class Repositorio {
 		lista_notificacao.add(notificacao);
 	}
 
+	public void adicionaPropostaRequisicao(PropostaAquisicao proposta) {
+		lista_propostaAquisicao.add(proposta);
+	}
+	
 	public void adicionaRequisicao(Requisicao requisicao) {
 		lista_requisicao.add(requisicao);
+	}
+	
+	public void adicionaRequisicaoCompra(RequisicaoCompra requisicaoCompra) {
+		lista_requisicaoCompra.add(requisicaoCompra);
 	}
 
 	public void adicionaTipoUtilizador(TipoUtilizador tipo) {
