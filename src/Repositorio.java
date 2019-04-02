@@ -1,11 +1,13 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Repositorio {
 	// Atributes
 	private ArrayList<Coima> lista_coima;
 	private ArrayList<Copia> lista_copia;
 	private ArrayList<Devolucao> lista_devolucao;
-	private ArrayList<Emprestimo> lista_emprestimo;
+//	private ArrayList<Emprestimo> lista_emprestimo;
+	private HashMap<Requisicao, Emprestimo> map_emprestimo;
 	private ArrayList<Livro> lista_livro;
 	private ArrayList<Notificacao> lista_notificacao;
 	private ArrayList<Requisicao> lista_requisicao;
@@ -17,7 +19,8 @@ public class Repositorio {
 		this.lista_coima = new ArrayList<>();
 		this.lista_copia = new ArrayList<>();
 		this.lista_devolucao = new ArrayList<>();
-		this.lista_emprestimo = new ArrayList<>();
+//		this.lista_emprestimo = new ArrayList<>();
+		this.map_emprestimo = new HashMap<>();
 		this.lista_livro = new ArrayList<>();
 		this.lista_notificacao = new ArrayList<>();
 		this.lista_requisicao = new ArrayList<>();
@@ -39,7 +42,8 @@ public class Repositorio {
 	}
 
 	public void adicionaEmprestimo(Emprestimo emprestimo) {
-		lista_emprestimo.add(emprestimo);
+//		lista_emprestimo.add(emprestimo);
+		map_emprestimo.put(emprestimo.getRequisicao(), emprestimo);
 	}
 
 	public void adicionaLivro(Livro livro) {
@@ -53,21 +57,22 @@ public class Repositorio {
 	public void adicionaRequisicao(Requisicao requisicao) {
 		lista_requisicao.add(requisicao);
 	}
-	
+
 	public void adicionaTipoUtilizador(TipoUtilizador tipo) {
 		lista_tipoUtilizador.add(tipo);
 	}
-	
+
 	public void adicionaUtilizador(Utilizador utilizador) {
 		lista_utilizador.add(utilizador);
 	}
-	
+
 	public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r) {
-		for (Emprestimo emprestimo : lista_emprestimo) {
-			if (emprestimo.getRequisicao().equals(r)) {
-				return emprestimo;
-			}
-		}
-		return null;
+		return map_emprestimo.get(r);
+//		for (Emprestimo emprestimo : lista_emprestimo) {
+//			if (emprestimo.getRequisicao().equals(r)) {
+//				return emprestimo;
+//			}
+//		}
+//		return null;
 	}
 }
