@@ -4,11 +4,13 @@ public class PropostaAquisicao {
 	// Attributes
 	private LocalDate data;
 	private Utilizador utilizador;
+	private String infoLivro;
 	
 	// Constructor
-	public PropostaAquisicao(LocalDate data, Utilizador utilizador) {
+	public PropostaAquisicao(LocalDate data, Utilizador utilizador, String infoLivro) {
 		this.data = data;
 		this.utilizador = utilizador;
+		this.infoLivro = infoLivro;
 	}
 
 	// Getters & Setters
@@ -26,5 +28,13 @@ public class PropostaAquisicao {
 
 	public void setUtilizador(Utilizador utilizador) {
 		this.utilizador = utilizador;
+	}
+
+	public String getInfoLivro() {
+		return infoLivro;
+	}
+
+	public void setInfoLivro(String infoLivro) {
+		this.infoLivro = infoLivro;
 	}
 }
