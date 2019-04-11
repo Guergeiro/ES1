@@ -10,6 +10,12 @@ public class Utilizador {
 		this.estado = estado;
 	}
 
+	public Utilizador(String nome, String estado, TipoUtilizador tipoUtilizador) {
+		this.nome = nome;
+		this.estado = estado;
+		this.tipoUtilizador = tipoUtilizador;
+	}
+
 	// Gets & Sets
 	public String getNome() {
 		return nome;
