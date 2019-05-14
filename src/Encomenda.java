@@ -1,30 +1,30 @@
 import java.time.LocalDate;
 
 public class Encomenda {
-	// Attributes
-	private LocalDate data;
-	private RequisicaoCompra requisicao;
-	
-	// Constructor
-	public Encomenda(LocalDate data, RequisicaoCompra requisicao) {
-		this.data = data;
-		this.requisicao = requisicao;
-	}
+  // Attributes
+  private LocalDate data;
+  private RequisicaoCompra requisicao;
 
-	// Getters & Setters
-	public LocalDate getData() {
-		return data;
-	}
+  // Constructor
+  public Encomenda(LocalDate data, RequisicaoCompra requisicao) {
+    this.data = data;
+    this.requisicao = requisicao;
+  }
 
-	public void setData(LocalDate data) {
-		this.data = data;
-	}
+  // Getters & Setters
+  public LocalDate getData() {
+    return data;
+  }
 
-	public RequisicaoCompra getRequisicao() {
-		return requisicao;
-	}
+  public void setData(LocalDate data) {
+    this.data = data;
+  }
 
-	public void setRequisicao(RequisicaoCompra requisicao) {
-		this.requisicao = requisicao;
-	}
+  public RequisicaoCompra getRequisicao() {
+    return requisicao;
+  }
+
+  public void setRequisicao(RequisicaoCompra requisicao) {
+    this.requisicao = requisicao;
+  }
 }

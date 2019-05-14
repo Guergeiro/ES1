@@ -1,40 +1,40 @@
 import java.time.LocalDate;
 
 public class PropostaAquisicao {
-	// Attributes
-	private LocalDate data;
-	private Utilizador utilizador;
-	private String infoLivro;
-	
-	// Constructor
-	public PropostaAquisicao(LocalDate data, Utilizador utilizador, String infoLivro) {
-		this.data = data;
-		this.utilizador = utilizador;
-		this.infoLivro = infoLivro;
-	}
+  // Attributes
+  private LocalDate data;
+  private Utilizador utilizador;
+  private String infoLivro;
 
-	// Getters & Setters
-	public LocalDate getData() {
-		return data;
-	}
+  // Constructor
+  public PropostaAquisicao(LocalDate data, Utilizador utilizador, String infoLivro) {
+    this.data = data;
+    this.utilizador = utilizador;
+    this.infoLivro = infoLivro;
+  }
 
-	public void setData(LocalDate data) {
-		this.data = data;
-	}
+  // Getters & Setters
+  public LocalDate getData() {
+    return data;
+  }
 
-	public Utilizador getUtilizador() {
-		return utilizador;
-	}
+  public void setData(LocalDate data) {
+    this.data = data;
+  }
 
-	public void setUtilizador(Utilizador utilizador) {
-		this.utilizador = utilizador;
-	}
+  public Utilizador getUtilizador() {
+    return utilizador;
+  }
 
-	public String getInfoLivro() {
-		return infoLivro;
-	}
+  public void setUtilizador(Utilizador utilizador) {
+    this.utilizador = utilizador;
+  }
 
-	public void setInfoLivro(String infoLivro) {
-		this.infoLivro = infoLivro;
-	}
+  public String getInfoLivro() {
+    return infoLivro;
+  }
+
+  public void setInfoLivro(String infoLivro) {
+    this.infoLivro = infoLivro;
+  }
 }

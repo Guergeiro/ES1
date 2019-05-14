@@ -1,30 +1,30 @@
 public interface Repositorio {
-	// Methods
-	public void adicionaCoima(Coima coima);
+  // Methods
+  public void adicionaCoima(Coima coima);
 
-	public void adicionaCopia(Copia copia);
+  public void adicionaCopia(Copia copia);
 
-	public void adicionaDevolucao(Devolucao devolucao);
+  public void adicionaDevolucao(Devolucao devolucao);
 
-	public void adicionaEmprestimo(Emprestimo emprestimo);
-	
-	public void adicionaEncomenda(Encomenda encomenda);
-	
-	public void adicionaEntradaNovoLivro(EntradaNovoLivro entradaNovoLivro);
-	
-	public void adicionaLivro(Livro livro);
+  public void adicionaEmprestimo(Emprestimo emprestimo);
 
-	public void adicionaNotificacao(Notificacao notificacao);
+  public void adicionaEncomenda(Encomenda encomenda);
 
-	public void adicionaPropostaRequisicao(PropostaAquisicao proposta);
-	
-	public void adicionaRequisicao(Requisicao requisicao);
-	
-	public void adicionaRequisicaoCompra(RequisicaoCompra requisicaoCompra);
+  public void adicionaEntradaNovoLivro(EntradaNovoLivro entradaNovoLivro);
 
-	public void adicionaTipoUtilizador(TipoUtilizador tipo);
+  public void adicionaLivro(Livro livro);
 
-	public void adicionaUtilizador(Utilizador utilizador);
+  public void adicionaNotificacao(Notificacao notificacao);
 
-	public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
+  public void adicionaPropostaRequisicao(PropostaAquisicao proposta);
+
+  public void adicionaRequisicao(Requisicao requisicao);
+
+  public void adicionaRequisicaoCompra(RequisicaoCompra requisicaoCompra);
+
+  public void adicionaTipoUtilizador(TipoUtilizador tipo);
+
+  public void adicionaUtilizador(Utilizador utilizador);
+
+  public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 }

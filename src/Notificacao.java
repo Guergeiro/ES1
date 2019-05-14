@@ -1,30 +1,30 @@
 import java.time.LocalDate;
 
 public class Notificacao {
-	// Atributes
-	private LocalDate data;
-	private Emprestimo emprestimo;
-	
-	// Constructor
-	public Notificacao(LocalDate data, Emprestimo emprestimo) {
-		this.data = data;
-		this.emprestimo = emprestimo;
-	}
+  // Atributes
+  private LocalDate data;
+  private Emprestimo emprestimo;
 
-	// Getters & Setters
-	public LocalDate getData() {
-		return data;
-	}
+  // Constructor
+  public Notificacao(LocalDate data, Emprestimo emprestimo) {
+    this.data = data;
+    this.emprestimo = emprestimo;
+  }
 
-	public void setData(LocalDate data) {
-		this.data = data;
-	}
+  // Getters & Setters
+  public LocalDate getData() {
+    return data;
+  }
 
-	public Emprestimo getEmprestimo() {
-		return emprestimo;
-	}
+  public void setData(LocalDate data) {
+    this.data = data;
+  }
 
-	public void setEmprestimo(Emprestimo emprestimo) {
-		this.emprestimo = emprestimo;
-	}
+  public Emprestimo getEmprestimo() {
+    return emprestimo;
+  }
+
+  public void setEmprestimo(Emprestimo emprestimo) {
+    this.emprestimo = emprestimo;
+  }
 }

@@ -1,43 +1,42 @@
-
 public class Utilizador {
-	// Atributes
-	private String nome, estado;
-	private TipoUtilizador tipoUtilizador;
-	
-	// Constructor
-	public Utilizador(String nome, String estado) {
-		this.nome = nome;
-		this.estado = estado;
-	}
+  // Atributes
+  private String nome, estado;
+  private TipoUtilizador tipoUtilizador;
 
-	public Utilizador(String nome, String estado, TipoUtilizador tipoUtilizador) {
-		this.nome = nome;
-		this.estado = estado;
-		this.tipoUtilizador = tipoUtilizador;
-	}
+  // Constructor
+  public Utilizador(String nome, String estado) {
+    this.nome = nome;
+    this.estado = estado;
+  }
 
-	// Gets & Sets
-	public String getNome() {
-		return nome;
-	}
+  public Utilizador(String nome, String estado, TipoUtilizador tipoUtilizador) {
+    this.nome = nome;
+    this.estado = estado;
+    this.tipoUtilizador = tipoUtilizador;
+  }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+  // Gets & Sets
+  public String getNome() {
+    return nome;
+  }
 
-	public String getEstado() {
-		return estado;
-	}
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
 
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
+  public String getEstado() {
+    return estado;
+  }
 
-	public TipoUtilizador getTipoUtilizador() {
-		return tipoUtilizador;
-	}
+  public void setEstado(String estado) {
+    this.estado = estado;
+  }
 
-	public void setTipoUtilizador(TipoUtilizador tipoUtilizador) {
-		this.tipoUtilizador = tipoUtilizador;
-	}
+  public TipoUtilizador getTipoUtilizador() {
+    return tipoUtilizador;
+  }
+
+  public void setTipoUtilizador(TipoUtilizador tipoUtilizador) {
+    this.tipoUtilizador = tipoUtilizador;
+  }
 }

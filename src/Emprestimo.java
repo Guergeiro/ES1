@@ -1,30 +1,30 @@
 import java.time.LocalDate;
 
 public class Emprestimo {
-	// Atributes
-	private LocalDate data;
-	private Requisicao requisicao;
-	
-	// Constructor
-	public Emprestimo(LocalDate data, Requisicao requisicao) {
-		this.data = data;
-		this.requisicao = requisicao;
-	}
+  // Atributes
+  private LocalDate data;
+  private Requisicao requisicao;
 
-	// Getters & Setters
-	public LocalDate getData() {
-		return data;
-	}
+  // Constructor
+  public Emprestimo(LocalDate data, Requisicao requisicao) {
+    this.data = data;
+    this.requisicao = requisicao;
+  }
 
-	public void setData(LocalDate data) {
-		this.data = data;
-	}
+  // Getters & Setters
+  public LocalDate getData() {
+    return data;
+  }
 
-	public Requisicao getRequisicao() {
-		return requisicao;
-	}
+  public void setData(LocalDate data) {
+    this.data = data;
+  }
 
-	public void setRequisicao(Requisicao requisicao) {
-		this.requisicao = requisicao;
-	}
+  public Requisicao getRequisicao() {
+    return requisicao;
+  }
+
+  public void setRequisicao(Requisicao requisicao) {
+    this.requisicao = requisicao;
+  }
 }
