@@ -1,4 +1,6 @@
+package compraLivros;
 import java.time.LocalDate;
+import livros.Copia;
 
 public class EntradaNovoLivro {
   // Attributes

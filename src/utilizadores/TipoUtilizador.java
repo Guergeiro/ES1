@@ -1,3 +1,4 @@
+package utilizadores;
 public class TipoUtilizador {
   // Attributes
   private String descricao;

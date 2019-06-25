@@ -1,4 +1,6 @@
+package compraLivros;
 import java.time.LocalDate;
+import utilizadores.Utilizador;
 
 public class PropostaAquisicao {
   // Attributes

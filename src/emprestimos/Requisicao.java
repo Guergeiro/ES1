@@ -1,4 +1,7 @@
+package emprestimos;
 import java.time.LocalDate;
+import livros.Copia;
+import utilizadores.Utilizador;
 
 public class Requisicao {
   // Attributes

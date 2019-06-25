@@ -1,3 +1,5 @@
+package emprestimos;
+
 public class Coima {
   // Atributes
   private String descricao;
