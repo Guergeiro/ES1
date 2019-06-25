@@ -1,3 +1,4 @@
+package utilizadores;
 public class Utilizador {
   // Atributes
   private String nome, estado;

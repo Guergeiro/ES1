@@ -1,5 +1,19 @@
+package util;
 import java.util.ArrayList;
 import java.util.HashMap;
+import compraLivros.Encomenda;
+import compraLivros.EntradaNovoLivro;
+import compraLivros.PropostaAquisicao;
+import compraLivros.RequisicaoCompra;
+import emprestimos.Coima;
+import emprestimos.Devolucao;
+import emprestimos.Emprestimo;
+import emprestimos.Notificacao;
+import emprestimos.Requisicao;
+import livros.Copia;
+import livros.Livro;
+import utilizadores.TipoUtilizador;
+import utilizadores.Utilizador;
 
 public class RepositorioMem implements Repositorio {
   // Atributes
