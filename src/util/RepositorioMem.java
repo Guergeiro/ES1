@@ -142,7 +142,7 @@ public class RepositorioMem implements Repositorio {
     lista_reparacao.add(reparacao);
   }
 
-  public void adicionarFaturacao(Faturacao faturacao) {
+  public void adicionaFaturacao(Faturacao faturacao) {
     lista_faturacao.add(faturacao);
   }
 

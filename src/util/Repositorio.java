@@ -69,5 +69,5 @@ public interface Repositorio {
   
   public void adicionaReparacao(Reparacao reparacao);
   
-  public void adicionarFaturacao(Faturacao faturacao);
+  public void adicionaFaturacao(Faturacao faturacao);
 }
